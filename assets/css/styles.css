@@ -7,38 +7,63 @@
 
 /* global styles */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins&display=swap");
 
 body {
-    background-color: #a4c2d1; /*Egg Blue*/
-    font-family: "Poppins", sans-serif;
+  background-color: #a4c2d1; /*Egg Blue*/
+  font-family: "Poppins", sans-serif;
 }
 
-h1, h2  {
-    font-family: "DM Serif Display", serif;
-    color:#184f63; /*Dark Blue*/
+h1,
+h2 {
+  font-family: "DM Serif Display", serif;
+  color: #184f63; /*Dark Blue*/
 }
 
+.sharp-corners, .sharp-corners * {
+  border-radius: 0;
+}
 /*Hero Section*/
 
 #hero {
-    min-height: 500px;
-    background: #dbdcde url(../images/hero-background.webp) no-repeat 50%  70%/cover;
-    color: white;
-    padding: 5% 7%;
+  min-height: 500px;
+  background: #dbdcde url(../images/hero-background.webp) no-repeat 50% 70% /
+    cover;
+  color: white;
+  padding: 5% 7%;
 }
 
 /*About section*/
 #about {
-    background-color: white;
+  background-color: white;
 }
 
 #portfolio {
-    background-color: #dbdcde; /*Light Grey*/
+  background-color: #dbdcde; /*Light Grey*/
+}
 
+#portfolio .card-title {
+  color: #1f7798; /*Mid-Blue*/
+  font-size: 1.2rem;
+}
+
+#portfolio .btn-outline-secondary:hover {
+  background-color: #1f7798; /*Mid-Blue*/
+  color: white;
+}
+
+#portfolio .card-text {
+    min-height: 120px;
 }
 
 /*Contact section*/
 #contact {
-    background-color: white;
+  background-color: white;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1200px) {
+  #portfolio .card-text {
+    min-height: auto;
+  }
 }
